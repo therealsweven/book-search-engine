@@ -11,7 +11,7 @@ const typeDefs = gql`
 
   type Auth {
     token: ID!
-    uer: User
+    user: User
   }
 
   type Book {
@@ -27,8 +27,8 @@ const typeDefs = gql`
   type Query {
     users: [User]!
     user(userId: ID!): User
-    # books: [Book]
-    # book(bookId: ID!): Book
+    me: User
+
   }
 
   type Mutation {
