@@ -14,7 +14,7 @@ This is a project converting a RESTful google books search API to use GraphQL an
 -npm i, npm run develop<br>
 Used [node](https://nodejs.org/en/) to run the script/server
 ## Usage
-Here is a link to the deployed application, be sure to sign up and search for books, save the results that you want by clicking the save button. Otherwise if using the source, once you have the application running you can view it using localhost:3000, and make GraphQL queries by navigating to localhost:3001/graphql.
+[Here is a link to the deployed application](https://vaulting-canyon-74.herokuapp.com/), be sure to sign up and search for books, save the results that you want by clicking the save button. Otherwise if using the source, once you have the application running you can view it using localhost:3000, and make GraphQL queries by navigating to localhost:3001/graphql.
 
 Here is a screenshot of the application.
 ![image](https://user-images.githubusercontent.com/123116188/232181277-f6db17f2-5f27-4957-a0d0-9009ab6b66ad.png)
