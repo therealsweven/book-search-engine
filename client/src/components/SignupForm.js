@@ -16,6 +16,7 @@ const SignupForm = () => {
   const [validated] = useState(false);
   // set state for alert
   const [showAlert, setShowAlert] = useState(false);
+  // assign createUser to execute create_user mutation with useMutation hook
   const [createUser, { error, data }] = useMutation(CREATE_USER);
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -31,17 +32,11 @@ const SignupForm = () => {
       event.preventDefault();
       event.stopPropagation();
     }
-
+// call createUser mutation with form data as variables
     try {
       const { data } = await createUser({
         variables: { ...userFormData },
       });
-
-      // if (!response.ok) {
-      //   throw new Error("something went wrong!");
-      // }
-
-      //const { token, user } = await response.json();
 
       Auth.login(data.createUser.token);
     } catch (err) {

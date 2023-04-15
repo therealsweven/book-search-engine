@@ -26,7 +26,7 @@ const authLink = setContext((_, { headers }) => {
     },
   };
 });
-
+// implement ApolloClient server into react-app
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
